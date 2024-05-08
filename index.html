@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="deleteLast()">⌫</button>
+            <button class="btn" onclick="appendOperator('/')">÷</button>
+            <button class="btn" onclick="appendOperator('*')">×</button>
+
+            <button class="btn" onclick="appendDigit('7')">7</button>
+            <button class="btn" onclick="appendDigit('8')">8</button>
+            <button class="btn" onclick="appendDigit('9')">9</button>
+            <button class="btn" onclick="appendOperator('-')">-</button>
+
+            <button class="btn" onclick="appendDigit('4')">4</button>
+            <button class="btn" onclick="appendDigit('5')">5</button>
+            <button class="btn" onclick="appendDigit('6')">6</button>
+            <button id="1" class="btn" onclick="appendOperator('+')">+</button>
+
+            <button class="btn" onclick="appendDigit('1')">1</button>
+            <button class="btn" onclick="appendDigit('2')">2</button>
+            <button class="btn" onclick="appendDigit('3')">3</button>
+            <button class="btn1" onclick="calculate()">=</button>
+
+            <button class="btn span-2" onclick="appendDigit('0')">0</button>
+            <button class="btn" onclick="appendDigit('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
